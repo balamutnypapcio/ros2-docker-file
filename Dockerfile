@@ -4,9 +4,10 @@ FROM osrf/ros:humble-desktop
 # Ustawienie powłoki na bash
 SHELL ["/bin/bash", "-c"]
 
-# Instalacja dodatkowych przydatnych narzędzi
+# Instalacja dodatkowych przydatnych narzędzi + COLCON EXTENSIONS
 RUN apt-get update && apt-get install -y \
     python3-pip \
+    python3-colcon-common-extensions \
     nano \
     vim \
     git \
